@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TD5" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TD5" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TD5" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="BS.cpp" />
+		<Unit filename="BS.hpp" />
+		<Unit filename="BinLattice.hpp" />
+		<Unit filename="Crr.cpp" />
+		<Unit filename="Crr.h" />
+		<Unit filename="DigitalOption.cpp" />
+		<Unit filename="DigitalOption.hpp" />
+		<Unit filename="EuropeanOption.cpp" />
+		<Unit filename="EuropeanOption.hpp" />
+		<Unit filename="MonteCarlo.cpp" />
+		<Unit filename="MonteCarlo.hpp" />
+		<Unit filename="Option.cpp" />
+		<Unit filename="Option.hpp" />
+		<Unit filename="Pricer.cpp" />
+		<Unit filename="Pricer.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="tree.cpp" />
+		<Unit filename="tree.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
