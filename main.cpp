@@ -36,10 +36,6 @@ int main()
 
     double up = 0.03;
     double down = -0.03;
-
-
-
-
     cout << "up " << up << endl;
 
 
@@ -58,17 +54,5 @@ int main()
     cout << "MonteCarlo " << test.simulate() << endl;
     cout << "Iteration formula CRR : " << resultCrr[0] << endl;
     cout << "Closed formula CRR : " << resultCrr[1] << endl;
-
-
-
-
-
-
-
-
-
-
-
-
     return 0;
 }
