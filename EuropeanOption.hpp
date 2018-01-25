@@ -2,6 +2,7 @@
 #define _EUROPEANOPTION_HPP
 #include <iostream>
 #include "Option.hpp"
+#include <string>
 
 
 using namespace std;
@@ -17,7 +18,7 @@ public :
 
 
     virtual double PayOff(double z, double k, bool isCall) const;
-
+    virtual string getClasseName() const;
 
 
 };

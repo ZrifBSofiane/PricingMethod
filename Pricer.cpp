@@ -60,6 +60,7 @@ vector<double> Pricer::CrrMethod()
 
 // **************************** TREE CREATION ********************
 
+
     for(int n=0; n<deep; n++)
     {
         vector<Crr*> tempCrrVector;
@@ -95,7 +96,12 @@ vector<double> Pricer::CrrMethod()
             Crr *CrrI = vectorCrr[n+1][i];
             double value1 = CrrI1->GetH();
             double value2 = CrrI->GetH();
-            CrrSetH->SetH((q*value1+(1-q)*value2)/(1+r));
+
+            if(this->opt.getClasseName() == "AmericanOption")
+                CrrSetH->SetH(max((q*value1+(1-q)*value2)/(1+r),CrrSetH->GetS()));
+            else
+                CrrSetH->SetH((q*value1+(1-q)*value2)/(1+r));
+
         }
     }
 
@@ -143,8 +149,6 @@ vector<double> Pricer::CrrMethod()
 // **************************** SHOW RESULTS  ********************
     Crr *CrrResult = vectorCrr[0][0];
 
-   // cout << endl << "The final price of this option is (CRR method) : " << CrrResult->GetH();
-    //cout << endl << "The final price of this option is (Closed Formula Method) : " << closedFormula;
 // **************************** END SHOW RESULTS  ********************
 
 
