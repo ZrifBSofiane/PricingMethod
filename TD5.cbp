@@ -35,6 +35,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="AmericanOption.cpp" />
+		<Unit filename="AmericanOption.hpp" />
 		<Unit filename="BS.cpp" />
 		<Unit filename="BS.hpp" />
 		<Unit filename="BinLattice.hpp" />
