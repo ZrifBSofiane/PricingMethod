@@ -13,4 +13,10 @@ I make one class for each pricer method. In fact, all pricer works with an Optio
 At the beginning, the pricer needed all the data to works. But because i developped Option Abstract Class, it's more easy to work with it for the pricer.
 
 I can add that because Option is abstract, it must have virtual method, but which one ? Obviously the payoff method. Each Option has his own payoff.
+
+# How to use the algo ? 
+
+That's pretty easy. First you have to give some data that are printed on the screen. Then you choose which Option we want to price. And finally, let's run the computer :) 
+
+Basically, when you give an answer which does not correspond to all the propositions, it will take one of them automatically. 
  
