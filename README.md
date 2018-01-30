@@ -26,4 +26,4 @@ I choose to do the first Bonus from the TD9 which is A.
 Moreover, there an class named BinLattice which represent a binomial tree. It was developped with a Template, so it can store whatever you want. 
 # Contributors 
 
-This project was made by group XX composed by me BOURAGBA SOFIANE and JASAWANT NAIME GAEL
+This project was made by group ID 3-4 composed by me BOURAGBA SOFIANE and JASAWANT NAIME GAEL
